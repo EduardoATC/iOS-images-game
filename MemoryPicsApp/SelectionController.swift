@@ -75,8 +75,6 @@ class SelectionController: UIViewController, UICollectionViewDelegate, UICollect
             evaluateSelections()
            }
     
-   
- 
     
     //Shows the images selected by the user when a cell is clicked.
     func showSelection() {
@@ -105,7 +103,6 @@ class SelectionController: UIViewController, UICollectionViewDelegate, UICollect
             
             for i in 0...imagesInGame.count - 1{
                 
-                
                 if imagesInGame[i] == cellsSelected [i]
                     {
                         resultText.isHidden = false
@@ -124,7 +121,5 @@ class SelectionController: UIViewController, UICollectionViewDelegate, UICollect
     override func viewDidDisappear(_ animated: Bool){
         imagesInGame = [Int]()
         cellsSelected = [Int]()
-        
-        
     }
 }
